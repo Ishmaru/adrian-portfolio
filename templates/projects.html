@@ -1,11 +1,26 @@
-<div class="row">
-  <a class="col s1 waves-effect waves-light btn" ng-click="kind = ''">All</a>
+<!-- <div class="row">
+  <a class="col s1 waves-effect waves-light btn" ng-click="kind = '!arts'">All</a>
   <a class="col s1 waves-effect waves-light btn" ng-click="kind = 'web'">WEB</a>
   <a class="col s1 waves-effect waves-light btn" ng-click="kind = 'mobile'">Mobile</a>
   <a class="col s2 waves-effect waves-light btn" ng-click="kind = 'desktop'">Desktop Games</a>
   <a class="col s3 waves-effect waves-light btn" ng-click="kind = 'Krazy Keet Games'">Krazy Keet Games</a>
   <a class="col s3 waves-effect waves-light btn" ng-click="kind = 'Titanomachy Studios'">Titanomachy Studios</a>
   <a class="col s1 waves-effect waves-light btn" ng-click="kind = 'arts'">ART</a>
+</div> -->
+<div class="row">
+  <a class='dropdown-button btn col s3 right' href='' data-activates='dropdown1'>Filter: {{kind}}</a>
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a class="color-main waves-effect waves-light" ng-click="kind = ''">All</a></li>
+    <li class="divider"></li>
+    <li><a class="color-main waves-effect waves-light" ng-click="kind = 'web'">WEB</a></li>
+    <li><a class="color-main waves-effect waves-light" ng-click="kind = 'mobile'">Mobile</a></li>
+    <li><a class="color-main waves-effect waves-light" ng-click="kind = 'desktop'">Desktop Games</a></li>
+    <li class="divider"></li>
+    <li><a class="color-main waves-effect waves-light" ng-click="kind = 'Krazy Keet Games'">Krazy Keet Games</a></li>
+    <li><a class="color-main waves-effect waves-light" ng-click="kind = 'Titanomachy Studios'">Titanomachy Studios</a></li>
+    <li class="divider"></li>
+    <li><a class="color-main waves-effect waves-light" ng-click="kind = 'arts'">ART</a></li>
+  </ul>
 </div>
 
 <section class="project-list z-depth-5">
@@ -15,20 +30,26 @@
       <img class="col s12 z-depth-2" ng-src="{{item.logoSrc}}" alt="{{item.name}}" height="350" width="600">
     </div>
     <div class="collapsible-body">
-      <div class="block">
-      <h4 class="color-main">{{item.name}}</h4>
-        <div class="row">
-          <span class="color-main col s1">{{item.version}}</span>
-          <span class="color-main col s6" ng-show="item.studio">STUDIO: {{item.studio}}</span>
+      <div class="row">
+        <h4 class="col s12 color-main">{{item.name}}</h4>
+      </div>
+      <div class="row">
+        <div class="col s6">
+          <span ng-show="item.version" class="color-main margin">v# {{item.version}}</span>
+          <span class="color-main margin" ng-show="item.studio">{{item.studio}}</span>
           <!-- <span class="color-main col s2" ng-show="item.platforms">Platforms: {{item.platforms}}</span> -->
-          <a class="waves-effect waves-light btn  col s2" ng-show="item.gitHub" ng-href="{{item.gitHub}}">Source Code</a>
-          <a class="waves-effect waves-light btn  col s2" ng-show="item.download" ng-href="{{item.download}}">Download</a>
-          <a class="waves-effect waves-light btn  col s2" ng-show="item.android" ng-ref="{{item.android}}">Google Play</a>
-          <a class="waves-effect waves-light btn  col s2" ng-show="item.itunes" ng-href="{{item.itunes}}">iTunes</a>
-          <a class="waves-effect waves-light btn  col s2 " ng-show="item.url" ng-href="{{item.url}}">Visit Site</a>
+        </div>
+        <div class="col s6">
+          <a target="_blank" class="waves-effect waves-light btn right margin" ng-show="item.gitHub" ng-href="{{item.gitHub}}">Source Code</a>
+          <a target="_blank" class="waves-effect waves-light btn right margin" ng-show="item.download" ng-href="{{item.download}}">Download</a>
+          <a target="_blank" class="waves-effect waves-light btn right margin" ng-show="item.android" ng-ref="{{item.android}}">Google Play</a>
+          <a target="_blank" class="waves-effect waves-light btn right margin" ng-show="item.itunes" ng-href="{{item.itunes}}">iTunes</a>
+          <a target="_blank" class="waves-effect waves-light btn right margin" ng-show="item.url" ng-href="{{item.url}}">Visit Site</a>
         </div>
       </div>
-      <p class="color-main block">{{item.description}}</p>
+      <div class="row">
+        <p class="col s12 color-main">{{item.description}}</p>
+      </div>
       <ul class="row" ng-show="item.media">
         <li>
           <img class="col s6" ng-show="item.media[0]" ng-src="{{item.media[0]}}" alt="{{item.name}} screenshot 1" height="200" width="320">
@@ -37,15 +58,8 @@
           <img class="col s6" ng-show="item.media[1]" ng-src="{{item.media[1]}}" alt="{{item.name}} screenshot 2" height="200" width="320">
         </li>
       </ul>
-      <script>
-        $(document).ready(function(){
-          $('.collapsible').collapsible({
-            accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-          });
-        });
-      </script>
     </div>
-    <!-- </a> -->
     </li>
   </ul>
+  <script src="scripts/view-scripts.js"></script>
 </section>

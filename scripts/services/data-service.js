@@ -133,7 +133,7 @@
         type: 'web',
         priority: 6,
         name: 'Brave Battle Arena',
-        studio: 'Krazy Keet Games',
+        studio: 'GA Personal Project',
         logoSrc: 'https://raw.githubusercontent.com/Ishmaru/Brave-Battle-Quest/master/art/bba.png',
         url: 'http://ishmaru.github.io/Brave-Battle-Quest/',
         media: ['https://raw.githubusercontent.com/Ishmaru/Brave-Battle-Quest/master/art/bbascreen1.png', 'https://raw.githubusercontent.com/Ishmaru/Brave-Battle-Quest/master/art/bbascreen2.png'],
@@ -145,6 +145,7 @@
         type: 'web',
         priority: 6,
         name: 'Indie Think Tank',
+        studio: 'GA Personal Project',
         logoSrc: 'https://dl.dropboxusercontent.com/s/pg2iw08cyt8blh1/Screen%20Shot%202016-07-08%20at%206.39.12%20PM.png',
         url: 'https://whispering-dusk-51539.herokuapp.com/',
         gitHub: 'https://github.com/Ishmaru/indie_think_tank',
@@ -155,6 +156,7 @@
         type: 'web',
         priority: 6,
         name: 'PokeMaster',
+        studio: 'GA Personal Project',
         logoSrc: 'http://25.media.tumblr.com/8e4aafd22dfc23592ea2bf16f4f7be87/tumblr_mze2tugzvO1qh44dro1_500.gif',
         url: 'https://stark-dawn-87636.herokuapp.com/#/game',
         media: ['https://raw.githubusercontent.com/Ishmaru/pokemaster/master/Screen%20Shot%202016-07-22%20at%209.43.04%20AM.png'],
@@ -166,6 +168,7 @@
         type: 'web',
         priority: 1,
         name: 'RnR',
+        studio: 'GA Group Project',
         logoSrc: 'https://dl.dropboxusercontent.com/s/bh70wrir8sfkucy/RNR2.jpg',
         url: 'https://enigmatic-inlet-27771.herokuapp.com/',
         media: ['https://raw.githubusercontent.com/Ishmaru/rnr/master/public/images/rnr_screenshot.jpg'],
@@ -174,13 +177,6 @@
         technologies: ['Node JS', 'Express', 'Mongo DB', 'Mongoose', 'EJS', 'Passport', 'Materialize'],
         team: true,
         role: ['GitHub Master', 'Back End developer']
-      },
-      {
-        type: 'sitelogo',
-        medium: 'logo',
-        priority: 1,
-        name: 'Krazy Keet Games',
-        logoSrc: 'http://other00.deviantart.net/e280/o/2014/261/9/0/90bbc32acb71e0387a611b22dd27fdc7.png'
       },
       {
         type: 'arts',
