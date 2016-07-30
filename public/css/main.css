@@ -1,8 +1,13 @@
 body {
   background-color: rgba(1, 1, 1, 1.0);
+  background-image: url("http://i68.tinypic.com/4lsmt3.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-attachment: fixed;
+  background-size: 100% auto;
 }
 
-.background-color {
+.background-color, nav {
   background-color: rgba(30, 30, 30, 1.0);
 }
 
@@ -14,7 +19,9 @@ li.divider {
 .color-main,
 .dropdown-content li>a,
 p,
-span {
+span,
+nav .brand-logo,
+nav ul a {
   color: rgba(255, 190, 5, 1.0);
 }
 
@@ -31,7 +38,6 @@ span {
 .dropdown-content li {
   min-height: 25px;
   min-width: 185px;
-
 }
 
 .border {
@@ -86,11 +92,11 @@ section ul > li {
   overflow: hidden;
 }
 
-.btn:hover {
+/*.btn:hover, nav ul a:hover, .dropdown-content li:hover{
   background-color: rgba(0, 170, 245, 1.0);
   color: rgba(255, 255, 255, 1.0);
 
-}
+}*/
 
 .btn {
   background-color: rgba(255, 190, 5, 1.0);
@@ -118,7 +124,12 @@ section ul > li {
   font-size: 0.7em;
 }
 
-.dropdown-content li:hover {
+.btn:hover, nav ul a:hover, .dropdown-content li:hover {
   background-color: rgba(70, 65, 55, 1.0);
-  color: rgba(1, 1, 1, 1.0);
+  color: rgba(255, 190, 5, 1.0);
+}
+
+.brand-logo {
+  margin-left: 20px;
+  margin-right: 20px;
 }
