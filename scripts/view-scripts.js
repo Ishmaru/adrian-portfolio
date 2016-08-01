@@ -13,5 +13,6 @@
       alignment: 'left' // Displays dropdown with edge aligned to the left of button
     }
     );
+    $('.modal-trigger').leanModal();
     $('.carousel.carousel-slider').carousel({full_width: true});
   });

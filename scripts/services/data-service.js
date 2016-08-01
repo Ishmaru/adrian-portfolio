@@ -183,49 +183,70 @@
         medium: '3D',
         priority: 5,
         name: 'Karina Battle',
-        logoSrc: 'http://other00.deviantart.net/d4c5/o/2010/353/b/9/b986246b08e6f028e2977ce507557404.jpg'
+        studio: '3D Modeling',
+        logoSrc: 'http://other00.deviantart.net/d4c5/o/2010/353/b/9/b986246b08e6f028e2977ce507557404.jpg',
+        description: "Karina is a Female anime character I designed, along with a futuristic tank design as well. Originally suppose to be a part of a animation but never got around to making it.",
+        url: 'http://delphadesign.deviantart.com/art/Karina-V1-170679224'
       },
       {
         type: 'arts',
         medium: '3D',
         priority: 3,
         name: 'Chasm Image',
-        logoSrc: 'http://other00.deviantart.net/127c/o/2011/003/f/6/f6e053d41c832a3dc570cd5c5aafbe6e.jpg'
+        studio: '3D Modeling',
+        logoSrc: 'http://other00.deviantart.net/127c/o/2011/003/f/6/f6e053d41c832a3dc570cd5c5aafbe6e.jpg',
+        description: "The concept was an RTS taking place in a fantasy world in an early industrial / early age of flight. I wanted the game to have characters with anime style.",
+        url: 'http://delphadesign.deviantart.com/art/Chasm-Opening-Render-171902179'
       },
       {
         type: 'arts',
         medium: '3D',
         priority: 3,
         name: 'TANK',
-        logoSrc: 'http://other00.deviantart.net/cbde/o/2011/003/9/7/97f552d8b15b06d97b1961149e49033e.jpg'
+        studio: '3D Modeling',
+        logoSrc: 'http://other00.deviantart.net/cbde/o/2011/003/9/7/97f552d8b15b06d97b1961149e49033e.jpg',
+        description: "Tank that was made to be in the same world as my Karina Character.",
+        url: 'http://delphadesign.deviantart.com/art/Tank-Shoot-170681394'
       },
       {
         type: 'arts',
         medium: '3D',
         priority: 4,
         name: 'Mech Battle',
-        logoSrc: 'http://other00.deviantart.net/8fa5/o/2010/353/1/7/1719108e102ec02f90a21c3ccfefbf66.jpg'
+        studio: '3D Modeling',
+        logoSrc: 'http://other00.deviantart.net/8fa5/o/2010/353/1/7/1719108e102ec02f90a21c3ccfefbf66.jpg',
+        description: "The robot was actually supposed to be in the same world as my Karina character design. The animation was never completed due to lack of time, as well as other projects.",
+        url: 'http://delphadesign.deviantart.com/art/Mechs-in-Battle-171315022'
       },
       {
         type: 'arts',
         medium: '3D',
         priority: 6,
         name: 'Dojo',
-        logoSrc: 'http://other00.deviantart.net/8122/o/2010/353/3/1/3161d3d532d90314ab7de2e7229760b2.jpg'
+        studio: '3D Modeling',
+        logoSrc: 'http://other00.deviantart.net/8122/o/2010/353/3/1/3161d3d532d90314ab7de2e7229760b2.jpg',
+        description: "An Japanese Styled house, Dojo, or Temple. Mainly created to practice my environmental lighting and mood.",
+        url: 'http://delphadesign.deviantart.com/art/Asian-Dojo-or-Temple-170682573'
       },
       {
         type: 'arts',
         medium: '3D',
         priority: 4,
         name: 'Space',
-        logoSrc: 'http://other00.deviantart.net/4f3b/o/2010/353/1/5/1525c57900f4fd2ba1ef14a82841dbd3.jpg'
+        studio: '3D Modeling',
+        logoSrc: 'http://other00.deviantart.net/4f3b/o/2010/353/1/5/1525c57900f4fd2ba1ef14a82841dbd3.jpg',
+        description: "A Space Battle scene animated specifically for my demo reel.",
+        url: 'http://delphadesign.deviantart.com/art/Space-Battle-170681893'
       },
       {
         type: 'arts',
         medium: '3D',
         priority: 1,
         name: 'Beach Hut',
-        logoSrc: 'http://other00.deviantart.net/05c0/o/2011/003/6/d/6dafc5e847d886b237be1916e5f5aa1e.jpg'
+        studio: '3D Modeling',
+        logoSrc: 'http://other00.deviantart.net/05c0/o/2011/003/6/d/6dafc5e847d886b237be1916e5f5aa1e.jpg',
+        description: "An old scene made for my Maya class. Later used in the animation for my final",
+        url: 'http://delphadesign.deviantart.com/art/Beach-Hut-170677341'
       }
     ];
 

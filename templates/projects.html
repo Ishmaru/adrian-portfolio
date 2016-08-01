@@ -21,8 +21,10 @@
 <section class="project-list z-depth-5">
   <ul class="collapsible popout" data-collapsible="accordion">
     <li ng-repeat="item in vm.dataList | filter: kind | orderBy: '-priority'" class="add-space">
-    <div class="collapsible-header select row">
-      <img class="col s12 z-depth-2" ng-src="{{item.logoSrc}}" alt="{{item.name}}" height="350" width="600">
+    <div class="collapsible-header row select waves-effect waves-light">
+<!--       <div class=""> -->
+        <img class="col s12 z-depth-2" ng-src="{{item.logoSrc}}" alt="{{item.name}}" height="350" width="600">
+<!--       </div> -->
     </div>
     <div class="collapsible-body">
       <div class="row">
@@ -46,12 +48,36 @@
         <p class="col s12 color-main">{{item.description}}</p>
       </div>
       <ul class="row" ng-show="item.media">
-        <li>
-          <img class="col s6" ng-show="item.media[0]" ng-src="{{item.media[0]}}" alt="{{item.name}} screenshot 1" height="200" width="320">
-        </li>
-        <li>
-          <img class="col s6" ng-show="item.media[1]" ng-src="{{item.media[1]}}" alt="{{item.name}} screenshot 2" height="200" width="320">
-        </li>
+        <a ng-show="item.media[0]" class="modal-trigger col s6" data-target="modal1{{$index}}">
+          <li class="waves-effect waves-light select">
+            <img ng-src="{{item.media[0]}}" alt="{{item.name}} screenshot 1" height="200" width="320">
+          </li>
+        </a>
+        <a ng-show="item.media[1]" class="modal-trigger col s6 right" data-target="modal2{{$index}}">
+          <li class="waves-effect waves-light select">
+            <img ng-show="item.media[1]" ng-src="{{item.media[1]}}" alt="{{item.name}} screenshot 2" height="200" width="320">
+          </li>
+        </a>
+
+        <div id="modal1{{$index}}" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <img ng-src="{{item.media[0]}}" alt="{{item.name}} screenshot 1" height="98%" width="100%">
+          </div>
+          <div class="modal-footer">
+            <span class="left">{{item.name}} Screenshot 1</span>
+            <a class="modal-action modal-close waves-effect waves-light btn">Close</a>
+          </div>
+        </div>
+
+        <div id="modal2{{$index}}" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <img ng-src="{{item.media[1]}}" alt="{{item.name}} screenshot 2" height="98%" width="100%">
+          </div>
+          <div class="modal-footer">
+            <span class="left">{{item.name}} Screenshot 2</span>
+            <a class="modal-action modal-close waves-effect waves-light btn">Close</a>
+          </div>
+        </div>
       </ul>
     </div>
     </li>
