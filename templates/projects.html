@@ -1,4 +1,8 @@
 <div class="row">
+  <form class="col s4 left waves-effect waves-light">
+    <input placeholder="Search" class="validate" ng-model="kind" type="text" id="search">
+  </form>
+    <!-- <label class="col s2 left" for="search">Search</label> -->
   <a class='dropdown-button btn col s3 right' href='' data-activates='dropdown1'>Filter: {{kind}}</a>
   <ul id='dropdown1' class='dropdown-content'>
     <li><a class="color-main waves-effect waves-light" ng-click="kind = ''">All</a></li>

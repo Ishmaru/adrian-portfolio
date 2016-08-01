@@ -21,7 +21,8 @@ li.divider {
 p,
 span,
 nav .brand-logo,
-nav ul a {
+nav ul a,
+input {
   color: rgba(255, 190, 5, 1.0);
 }
 
@@ -114,7 +115,7 @@ section ul > li {
   color: rgba(255, 190, 5, 1.0);
 }
 
-.margin {
+.margin, nav ul a.btn {
   margin-left: 3px;
   margin-right: 3px;
 }
@@ -129,7 +130,18 @@ section ul > li {
   color: rgba(255, 190, 5, 1.0);
 }
 
-.brand-logo {
+.margin-large {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+input[type=text],
+input[type=text].valid,
+input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid rgba(255, 190, 5, 1.0);
+  height: 2rem;
+}
+
+input[type=text]:hover {
+  background-color: rgba(255, 190, 5, 0.1);
 }
