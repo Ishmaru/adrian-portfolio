@@ -14,5 +14,5 @@
     }
     );
     $('.modal-trigger').leanModal();
-    $('.carousel.carousel-slider').carousel({full_width: true});
+    $('.slider').slider({full_width: true});
   });

@@ -5,12 +5,13 @@
     .module('myApp')
     .controller('MainController', MainController);
 
-    MainController.$inject = ['DataService', '$log', '$state'];
+    MainController.$inject = ['DataService', 'ContactService', '$log', '$state'];
 
-    function MainController(DataService, $log, $state) {
+    function MainController(DataService, ContactService, $log, $state) {
       var vm = this;
       vm.sort;
       vm.dataList = DataService.dataList;
+      vm.contactList = ContactService.contactList;
       vm.grabItem = grabItem;
 
       if (DataService.id !== undefined) {
