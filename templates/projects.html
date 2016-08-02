@@ -1,26 +1,25 @@
 <div class="row">
   <form class="col s4 left waves-effect waves-light">
-    <input placeholder="Search" class="validate" ng-model="kind" type="text" id="search">
+    <input placeholder="Search" class="validate" ng-model="vm.kind" type="text" id="search">
   </form>
-    <!-- <label class="col s2 left" for="search">Search</label> -->
-  <a class='dropdown-button btn col s3 right' href='' data-activates='dropdown1'>Filter: {{kind}}</a>
+  <a class='dropdown-button btn col s3 right' href='' data-activates='dropdown1'>Filter: {{vm.kind}}</a>
   <ul id='dropdown1' class='dropdown-content'>
-    <li><a class="color-main waves-effect waves-light" ng-click="kind = ''">All</a></li>
+    <li><a class="color-main waves-effect waves-light" ng-click="vm.kind = ''">All</a></li>
     <li class="divider"></li>
-    <li><a class="color-main waves-effect waves-light" ng-click="kind = 'web'">WEB</a></li>
-    <li><a class="color-main waves-effect waves-light" ng-click="kind = 'mobile'">Mobile</a></li>
-    <li><a class="color-main waves-effect waves-light" ng-click="kind = 'desktop'">Desktop Games</a></li>
+    <li><a class="color-main waves-effect waves-light" ng-click="vm.kind = 'web'">WEB</a></li>
+    <li><a class="color-main waves-effect waves-light" ng-click="vm.kind = 'mobile'">Mobile</a></li>
+    <li><a class="color-main waves-effect waves-light" ng-click="vm.kind = 'desktop'">Desktop Games</a></li>
     <li class="divider"></li>
-    <li><a class="color-main waves-effect waves-light" ng-click="kind = 'Krazy Keet Games'">Krazy Keet Games</a></li>
-    <li><a class="color-main waves-effect waves-light" ng-click="kind = 'Titanomachy Studios'">Titanomachy Studios</a></li>
+    <li><a class="color-main waves-effect waves-light" ng-click="vm.kind = 'Krazy Keet Games'">Krazy Keet Games</a></li>
+    <li><a class="color-main waves-effect waves-light" ng-click="vm.kind = 'Titanomachy Studios'">Titanomachy Studios</a></li>
     <li class="divider"></li>
-    <li><a class="color-main waves-effect waves-light" ng-click="kind = 'arts'">ART</a></li>
+    <li><a class="color-main waves-effect waves-light" ng-click="vm.kind = 'arts'">ART</a></li>
   </ul>
 </div>
 
 <section class="project-list z-depth-5">
   <ul class="collapsible popout" data-collapsible="accordion">
-    <li ng-repeat="item in vm.dataList | filter: kind | orderBy: '-priority'" class="add-space">
+    <li ng-repeat="item in vm.dataList | filter: vm.kind | orderBy: '-priority'" class="add-space">
     <div class="collapsible-header row select waves-effect waves-light">
       <img class="col s12 z-depth-2" ng-src="{{item.logoSrc}}" alt="{{item.name}}" height="350" width="600">
     </div>

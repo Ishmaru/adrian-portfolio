@@ -10,6 +10,7 @@
 
   function DataService() {
     var id;
+    var kind = '!arts';
     var dataList = [
       {
         type: 'desktop',
@@ -250,7 +251,7 @@
       }
     ];
 
-    return {dataList, id};
+    return {dataList, kind, id};
   };
 
 })();

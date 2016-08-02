@@ -10,9 +10,7 @@ body {
 .adrian {
   background-image: url("../../adrianlg.png");
   background-repeat: no-repeat;
-  /*background-position: right center;*/
   background-position: 100% 30%
-
 }
 
 .portrait {

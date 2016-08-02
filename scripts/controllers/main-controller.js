@@ -9,6 +9,7 @@
 
     function MainController(DataService, ContactService, $log, $state) {
       var vm = this;
+      vm.kind = DataService.kind;
       vm.sort;
       vm.dataList = DataService.dataList;
       vm.contactList = ContactService.contactList;
