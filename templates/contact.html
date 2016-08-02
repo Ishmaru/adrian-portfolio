@@ -1,0 +1,20 @@
+<section class="contact-list portrait adrian">
+    <div class="row">
+      <div class="text-box col s7">
+        <h5>Welcome Traveller!</h5>
+        <p>My name is Adrian and I’m a Full Stack developer, along with 10 years of experience developing video games for PC and Android devices. Recently I’ve extended my skill set, by graduating General Assembly. There I obtained the knowledge and experience working various technologies such as Javascript, Angular, jQuery, Node.js, Mongo Db, Express, and  Ruby on Rails, SQL, and Sockets. Before then, I graduated NYIT where I learned the fundamentals of art, design, and animation, making me a well rounded and flexible web developer.</p>
+      </div>
+    </div>
+    <ul>
+      <div class="row row-pinch z-depth-3">
+        <li ng-repeat="contact in vm.contactList" class="col s4 overflow-hidden select center-align">
+          <a ng-show="contact.email" ng-href="{{contact.email}}">
+            <img ng-src="{{contact.logo}}" alt="{{contact.name}}" height="150" width="auto">
+          </a>
+          <a target="_blank" ng-show="contact.url" ng-href="{{contact.url}}">
+            <img class="center-align" ng-src="{{contact.logo}}" alt="{{contact.name}}" height="150" width="auto">
+          </a>
+        </li>
+      </div>
+    </ul>
+</section>

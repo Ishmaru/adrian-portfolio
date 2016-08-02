@@ -5,34 +5,40 @@
     .module("myApp")
     .factory("ContactService", ContactService);
 
-  DataService.$inject = [];
+  ContactService.$inject = [];
 
 
   function ContactService() {
     var contactList = [
       {
-        gmail: 'adrian.delpha@gmail.com',
-        gmailLogo: 'http://vignette4.wikia.nocookie.net/logopedia/images/5/54/Gmail_icon.png/revision/latest?cb=20150709135925'
+        name: 'Gmail',
+        email: 'adrian.delpha@gmail.com',
+        logo: 'https://www.agrega.hn/wp-content/uploads/2016/02/logo_lockup_gmail_icon_horizontal.png'
       },
       {
-        youtube: 'https://www.youtube.com/user/DelphaDesign',
-        youtubeLogo: 'https://www.youtube.com/yt/brand/media/image/YouTube-logo-full_color.png'
+        name: 'Linked In',
+        url: 'https://www.linkedin.com/in/adriandelpha',
+        logo: 'http://oi68.tinypic.com/f0xkc8.jpg'
       },
       {
-        deviantart: 'http://delphadesign.deviantart.com/',
-        deviantartLogo: 'http://www.userlogos.org/files/logos/dfordesmond/deviantart%201.png'
+        name: 'Git Hub',
+        url: 'https://github.com/Ishmaru',
+        logo: 'http://oi68.tinypic.com/jaucdx.jpg'
       },
       {
-        linkedin: 'https://www.linkedin.com/in/adriandelpha',
-        linkedinLogo: 'http://oi68.tinypic.com/f0xkc8.jpg'
+        name: 'YouTube',
+        url: 'https://www.youtube.com/user/DelphaDesign',
+        logo: 'https://www.youtube.com/yt/brand/media/image/YouTube-logo-full_color.png'
       },
       {
-        gitHub: 'https://github.com/Ishmaru',
-        gitHubLogo: 'http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/06/16-logo.jpg'
+        name: 'DeviantArt',
+        url: 'http://delphadesign.deviantart.com/',
+        logo: 'http://logok.org/wp-content/uploads/2014/12/DeviantArt-logo-wordmark-1024x762.png'
       },
       {
-        indieDb: 'http://www.indiedb.com/members/delphadesign',
-        indieDbLogo: 'http://static.indiedb.com/cutoff/images/default/bg_header_logo.png'
+        name: 'IndieDB',
+        url: 'http://www.indiedb.com/members/delphadesign',
+        logo: 'http://www.steverichey.com/wp-content/uploads/2013/11/indiedb.png'
       }
     ];
 

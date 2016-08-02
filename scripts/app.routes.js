@@ -25,6 +25,8 @@
       .state('contact', {
         url:'/contact',
         templateUrl: 'templates/contact.html',
+        controller: 'MainController',
+        controllerAs: "vm"
       })
       $urlRouterProvider.otherwise('/');
   }
