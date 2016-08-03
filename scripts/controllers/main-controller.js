@@ -5,15 +5,16 @@
     .module('myApp')
     .controller('MainController', MainController);
 
-    MainController.$inject = ['DataService', 'ContactService', '$log', '$state'];
+    MainController.$inject = ['DataService', 'ContactService', '$log', '$state', '$stateParams'];
 
-    function MainController(DataService, ContactService, $log, $state) {
+    function MainController(DataService, ContactService, $log, $state, $stateParams) {
       var vm = this;
-      vm.kind = DataService.kind;
+      vm.kind = $stateParams.kind;
       vm.sort;
       vm.dataList = DataService.dataList;
       vm.contactList = ContactService.contactList;
       vm.grabItem = grabItem;
+      vm.filter = filter;
 
       if (DataService.id !== undefined) {
         vm.selected = DataService.dataList[DataService.id];
@@ -23,6 +24,10 @@
         $log.warn(itemName);
         DataService.id = itemName;
         $state.go('project');
+      }
+
+      function filter(filterBy) {
+        DataService.kind = filterBy;
       }
     }
 

@@ -2,18 +2,18 @@
   <form class="col s4 left waves-effect waves-light">
     <input placeholder="Search" class="validate" ng-model="vm.kind" type="text" id="search">
   </form>
-  <a class='dropdown-button btn col s3 right' href='' data-activates='dropdown1'>Filter: {{vm.kind}}</a>
+  <a class='dropdown-button btn col s3 right' data-activates='dropdown1'>Filter Options:</a>
   <ul id='dropdown1' class='dropdown-content'>
-    <li><a class="color-main waves-effect waves-light" ng-click="vm.kind = ''">All</a></li>
+    <li><a class="color-main waves-effect waves-light" ui-sref="projects({kind : ''})">All</a></li>
     <li class="divider"></li>
-    <li><a class="color-main waves-effect waves-light" ng-click="vm.kind = 'web'">WEB</a></li>
-    <li><a class="color-main waves-effect waves-light" ng-click="vm.kind = 'mobile'">Mobile</a></li>
-    <li><a class="color-main waves-effect waves-light" ng-click="vm.kind = 'desktop'">Desktop Games</a></li>
+    <li><a class="color-main waves-effect waves-light" ui-sref="projects({kind : 'web'})">Web Apps</a></li>
+    <li><a class="color-main waves-effect waves-light" ui-sref="projects({kind : 'mobile'})">Mobile Games</a></li>
+    <li><a class="color-main waves-effect waves-light" ui-sref="projects({kind : 'desktop'})">Desktop Games</a></li>
     <li class="divider"></li>
-    <li><a class="color-main waves-effect waves-light" ng-click="vm.kind = 'Krazy Keet Games'">Krazy Keet Games</a></li>
-    <li><a class="color-main waves-effect waves-light" ng-click="vm.kind = 'Titanomachy Studios'">Titanomachy Studios</a></li>
+    <li><a class="color-main waves-effect waves-light" ui-sref="projects({kind : 'Krazy Keet Games'})">Krazy Keet Games</a></li>
+    <li><a class="color-main waves-effect waves-light" ui-sref="projects({kind : 'Titanomachy Studios'})">Titanomachy Studios</a></li>
     <li class="divider"></li>
-    <li><a class="color-main waves-effect waves-light" ng-click="vm.kind = 'arts'">ART</a></li>
+    <li><a class="color-main waves-effect waves-light" ui-sref="projects({kind : 'arts'})">3D Modeling</a></li>
   </ul>
 </div>
 

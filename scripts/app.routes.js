@@ -10,14 +10,14 @@
 
   function MainRouter($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state('Home', {
+      .state('home', {
         url: '/',
         templateUrl: 'templates/home.html',
         controller: 'MainController',
         controllerAs: "vm"
       })
       .state('projects', {
-        url:'/projects',
+        url:'/projects/:kind',
         templateUrl: 'templates/projects.html',
         controller: 'MainController',
         controllerAs: "vm"

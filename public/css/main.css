@@ -41,7 +41,8 @@ li.divider {
 
 li.divider,
 .slider .indicators .indicator-item.active,
-.btn
+.btn,
+.contact:hover
 {
   background-color: rgba(255, 190, 5, 1.0);
 }
@@ -146,6 +147,10 @@ section ul > li {
 
 .select:hover {
   border-color: rgba(255, 190, 5, 1);
+}
+
+.contact {
+  border-radius: 50%;
 }
 
 .background-shadow {

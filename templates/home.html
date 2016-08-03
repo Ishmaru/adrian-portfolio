@@ -1,7 +1,7 @@
 <div class="slider fullscreen">
   <ul class="slides">
     <li>
-      <a ng-click="vm.kind = 'web'" href="/#/projects">
+      <a ui-sref="projects({kind : 'web'})">
         <img src="http://oi68.tinypic.com/2u8apme.jpg">
         <div class="caption center-align background-shadow">
           <h3>Full Stack Developer</h3>
@@ -10,7 +10,7 @@
       </a>
     </li>
     <li>
-      <a ng-click="vm.kind = 'mobile'" href="/#/projects">
+      <a ui-sref="projects({kind : 'mobile'})">
         <img src="http://orig05.deviantart.net/0b1c/f/2014/083/7/e/zone_orion_6_small_by_delphadesign-d7bfxic.jpg">
         <div class="caption left-align background-shadow">
           <h3 class="margin-huge">Indie Game Developer</h3>
@@ -19,7 +19,7 @@
       </a>
     </li>
     <li>
-      <a ng-click="vm.kind = 'arts'" href="/#/projects">
+      <a ui-sref="projects({kind : 'arts'})">
         <img src="http://other00.deviantart.net/4f3b/o/2010/353/1/5/1525c57900f4fd2ba1ef14a82841dbd3.jpg"> <!-- random image -->
         <div class="caption right-align background-shadow">
           <h3 class="margin-huge">3D Modeling / Animation</h3>

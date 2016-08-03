@@ -7,8 +7,8 @@
     </div>
     <ul>
       <div class="row row-pinch z-depth-3">
-        <li ng-repeat="contact in vm.contactList" class="col s4 overflow-hidden center-align select">
-          <a ng-show="contact.email" ng-href="{{contact.email}}">
+        <li ng-repeat="contact in vm.contactList" class="col s4 overflow-hidden center-align contact">
+          <a ng-show="contact.email" href="mailto:{{contact.email}}">
             <img ng-src="{{contact.logo}}" alt="{{contact.name}}" height="150" width="auto">
           </a>
           <a target="_blank" ng-show="contact.url" ng-href="{{contact.url}}">
